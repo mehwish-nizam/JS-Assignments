@@ -1002,7 +1002,7 @@ function power(a,b){
     
 }
 // Question # 02  Any year is entered through the keyboard. Write a function to determine whether the year is a leap year or not. 
-function isLeap(year){
+function checkLeap(year){
     if(year%4==0&&year%100!=0){
         document.write("<br> "+year+"  is leap year");
     }
@@ -1011,7 +1011,7 @@ function isLeap(year){
     }
 }
 var year = +prompt("Enter year to check it is leap year or not");
-isLeap(year);
+checkLeap(year);
 
 // Question # 03  If the lengths of the sides of a triangle are denoted by a, b, and c, then area of triangle is given by area = S(S − a)(S − b)(S − c) where, S = ( a + b + c ) / 2 Calculate area of triangle using 2 functions
 function forS(a,b,c){
@@ -1175,7 +1175,7 @@ function showAlert(){
 }
 //Question # 02  Display some Mobile images in browser. On click on an image Show the message in alert to user. 
  
-document.write("<br> <img onclick = 'showpurchasealert()' src='phone1.png' alt=''><img onclick = 'showpurchasealert()' src='phone2.png' alt=''> <img onclick = 'showpurchasealert()' src='phone3.png' alt=''> ");
+document.write("<br> <img onclick = 'showpurchasealert()' src='img1.png' alt=''><img onclick = 'showpurchasealert()' src='img2.png' alt=''> <img onclick = 'showpurchasealert()' src='img3.png' alt=''> ");
 function showpurchasealert(){
     alert("Thanks for purchasing a phone from us");
 }
@@ -1194,7 +1194,7 @@ function deleteRecord(elmnt){
    elmnt.parentNode.parentNode.parentNode.removeChild(elmnt.parentNode.parentNode); 
 }
 //Qusetion 04. Display an image in browser. Change the picture on mouseover and set the first picture on mouseout.
-document.write("<br> <img id = 'image' onmouseover=\"changeimage('phone2.png')\" onmouseout=\"changeimage('phone1.png')\" src='phone1.png'>");
+document.write("<br> <img id = 'image' onmouseover=\"changeimage('phone2.png')\" onmouseout=\"changeimage('img1.png')\" src='phone1.png'>");
 function changeimage(link){
     img = document.getElementById('image');
     img.src = link;
